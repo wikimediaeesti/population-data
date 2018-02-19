@@ -94,14 +94,14 @@ def addPopData(site, atvk_id, name, pop):
 
 
         else:
-            print 'ERROR: NO DATA PAGE'
+            print ('ERROR: NO DATA PAGE')
             logging.warning('[[%s]]: no data page in Wikidata' % (wd_page.title() ))
 
 
 
 ###  main
 
-logging.basicConfig(filename='import.log',level=logging.DEBUG)
+logging.basicConfig(filename='import-lv.log',level=logging.DEBUG)
 logging.basicConfig(format='%(asctime)s %(message)s')
   
 f = codecs.open('klasifikators_29893.txt', encoding='utf-8')
